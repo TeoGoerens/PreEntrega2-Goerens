@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link a Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link a favicon -->
+    <link rel="shortcut icon" href="../imgs/puzzle.png" type="image/x-icon" />
+    <!-- Link a CSS -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Chacho</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="row">
+            <a href="../index.html">
+              <img
+                class="image__logo"
+                src="../imgs/puzzle.png"
+                alt="Logo Chacho"
+              />
+            </a>
+            <a href="../index.html"
+              ><p class="text__logo">LA WEB DE CHACHO</p></a
+            >
+          </div>
+          <!-- Aca va la imagen del logo -->
+
+          <div class="column">
+            <div class="block__profile">
+              <a href="#">
+                <img class="image__profile" src="../imgs/perfil.png" alt="" />
+              </a>
+              <a href="#" class="name__profile"> Teo Goerens</a>
+            </div>
+            <nav class="nav__bar">
+              <ul class="nav__ul">
+                <li class="nav__item">
+                  <a href="../index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="prode.html" class="nav__link">Prode</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Cronicas</a>
+                </li>
+                <li class="nav__item">
+                  <a href="chachosfc.html" class="nav__link">Chachos FC</a>
+                </li>
+                <li class="nav__item">
+                  <a href="about.html" class="nav__link">Acerca</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#footer__contact__form__name" class="nav__link"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="cronicas__newproduct">
+        <h2 class="cronicas__newproduct__title">Cronica del año 2022</h2>
+        <p class="cronicas__newproduct__description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+          molestias pariatur ipsam eveniet totam est debitis aliquam architecto
+          consequuntur ratione iusto culpa, itaque deleniti amet?
+        </p>
+
+        <button class="cronicas__newproduct__button">Leer mas</button>
+      </div>
+      <div class="container">
+        <section class="cronicas__container">
+          <div class="cronicas__card">
+            <img
+              class="cronicas__card__image"
+              src="../imgs/literatura.png"
+              alt="Imagen de la cronica"
+            />
+            <h3 class="cronicas__card__title">Cronica del año 2021</h3>
+            <p class="cronicas__card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              sapiente deleniti consequuntur possimus labore! Commodi!
+            </p>
+          </div>
+          <div class="cronicas__card">
+            <img
+              class="cronicas__card__image"
+              src="../imgs/literatura.png"
+              alt="Imagen de la cronica"
+            />
+            <h3 class="cronicas__card__title">Cronica del año 2020</h3>
+            <p class="cronicas__card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              sapiente deleniti consequuntur possimus labore! Commodi!
+            </p>
+          </div>
+          <div class="cronicas__card">
+            <img
+              class="cronicas__card__image"
+              src="../imgs/literatura.png"
+              alt="Imagen de la cronica"
+            />
+            <h3 class="cronicas__card__title">Cronica del año 2019</h3>
+            <p class="cronicas__card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              sapiente deleniti consequuntur possimus labore! Commodi!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__contact__container">
+            <p class="footer__contact__title">CONTACTO</p>
+            <form action="" class="footer__contact__form">
+              <div class="footer__contact__form__userdata">
+                <div class="footer__contact__form__column">
+                  <input
+                    id="footer__contact__form__name"
+                    class="footer__contact__form__item"
+                    type="text"
+                    placeholder="Nombre"
+                  />
+                  <input
+                    class="footer__contact__form__item"
+                    type="text"
+                    placeholder="Correo electronico"
+                  />
+                  <input
+                    class="footer__contact__form__item"
+                    type="text"
+                    placeholder="Numero de telefono"
+                  />
+                </div>
+                <div class="footer__contact__form__column">
+                  <textarea
+                    class="footer__contact__form__message"
+                    name=""
+                    id=""
+                    placeholder="Comparti tu mensaje"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="footer__contact__form__buttoncontainer">
+                <input
+                  class="footer__contact__form__button"
+                  type="button"
+                  value="Enviar"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="footer__socialmedia__container">
+            <div class="footer__socialmedia__title">REDES SOCIALES</div>
+            <div class="footer__socialmedia__logocontainer">
+              <a href="https://twitter.com/" target="_blank">
+                <img
+                  class="footer__socialmedia__logo"
+                  src="../imgs/twitter.png"
+                  alt="Logo Twitter"
+                />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="footer__socialmedia__logo"
+                  src="../imgs/instagram.png"
+                  alt="Logo Instagram"
+                />
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="footer__socialmedia__logo"
+                  src="../imgs/facebook.png"
+                  alt="Logo Facebook"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        ©Copyright 2023 Teo Goerens. All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>

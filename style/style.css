@@ -1,0 +1,614 @@
+/* Color Theme Swatches in Hex*/
+.logotipo-rollformers-1-hex {
+  color: #f22e2e;
+}
+.logotipo-rollformers-2-hex {
+  color: #f26363;
+}
+.logotipo-rollformers-3-hex {
+  color: #f29494;
+}
+.logotipo-rollformers-4-hex {
+  color: #f2f2f2;
+}
+.logotipo-rollformers-5-hex {
+  color: #0d0d0d;
+}
+
+/* CSS aplicable a todo el documento */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #0d0d0d;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 2rem auto;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS aplicable al header */
+
+header {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.image__logo {
+  width: 50px;
+}
+
+.text__logo {
+  color: #f2f2f2;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.nav__ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.nav__item {
+  margin: 0.5rem 0rem 0.5rem 3rem;
+  text-align: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.block__profile {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image__profile {
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+}
+
+.name__profile {
+  margin-left: 1.5rem;
+  font-weight: bold;
+  line-height: 24px;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+/* CSS aplicable al main */
+
+.presentation__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.presentation__information {
+  width: 60%;
+}
+
+.presentation__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.presentation__description {
+  padding-top: 2rem;
+  text-align: justify;
+}
+
+.presentation__credentials {
+  width: 35%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px;
+  border-color: rgb(215, 203, 186);
+  border-width: 6px;
+  border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.login__form__label {
+  margin-top: 1rem;
+}
+
+.login__form__element {
+  margin-top: 1rem;
+  height: 40px;
+  padding-left: 0.5rem;
+}
+
+.login__button {
+  margin: 3rem auto 0rem;
+  height: 40px;
+  width: 100%;
+}
+
+.register__request__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.register__request__link {
+  padding-left: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.my__content__container {
+  margin-top: 5rem;
+}
+
+.my__content__cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.my__content__card {
+  display: flex;
+  flex-direction: column;
+  border-color: lightgray;
+  border-width: 1px;
+  border-style: solid;
+  text-align: justify;
+  padding: 3rem 1.5rem;
+  width: 30%;
+  min-height: 350px;
+  min-width: 300px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.my__content__card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.my__content__card__image {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.my__content__card__title {
+  font-weight: bold;
+}
+
+.messages__container {
+  margin-top: 5rem;
+}
+
+.messages__cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.messages__cards {
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-style: solid;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.messages__cards__title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.messages__cards__images {
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+}
+
+.messages__cards__profileinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.messages__cards__username {
+  font-weight: bold;
+}
+
+.messages__cards__email {
+  font-size: 0.7rem;
+}
+
+.messages__cards__text {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 1rem;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.register__container {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.register__chart {
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem 3rem;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register__chart__title {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.register__chart__description {
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 0.8rem;
+}
+
+#register__form {
+  padding-top: 1rem;
+}
+
+.register__form__element {
+  margin: 1rem 0rem 0.5rem;
+}
+
+.register__form__input {
+  padding-left: 0.5rem;
+}
+
+.register__form__buttoncontainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.register__form__button {
+  width: 30%;
+}
+
+/* CSS aplicable al footer */
+
+footer {
+  margin-top: 2rem;
+  background-color: rgb(215, 203, 186);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.footer__contact__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.footer__contact__form__column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.footer__contact__form__userdata {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contact__title {
+  font-weight: bold;
+}
+
+.footer__contact__form__item {
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.footer__contact__form__message {
+  height: 100%;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.footer__contact__form__buttoncontainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+.footer__contact__form__button {
+  width: 20%;
+  min-width: 50px;
+  font-size: 0.8rem;
+}
+
+.footer__socialmedia__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__socialmedia__title {
+  font-weight: bold;
+}
+
+.footer__socialmedia__logocontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.footer__socialmedia__logo {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__copyright {
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #0d0d0d;
+  font-size: 0.6rem;
+  padding: 0.2rem 0;
+}
+
+/* CSS del About */
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.about__description__container {
+  text-align: justify;
+  width: 50%;
+}
+
+.about__image__container {
+  width: 45%;
+  overflow: hidden;
+}
+
+.about__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* CSS de Chachos FC */
+
+.titles__container {
+  margin-top: 5rem;
+}
+
+.titles__cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.titles__cards {
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-style: solid;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titles__cards__title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.titles__cards__images {
+  width: 48px;
+  height: 48px;
+  margin: auto 0;
+}
+
+.titles__cards__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.titles__cards__text {
+  margin-top: 1rem;
+  padding: 1rem 2rem 2rem;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+/* CSS de Prode Chacho */
+
+.prode__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.prode__table {
+  margin: 2rem 0rem 5rem;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+.prode__table th {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.2rem;
+  border: 1px solid lightgrey;
+}
+
+.prode__table td {
+  text-align: center;
+  padding: 0.2rem;
+  border: 1px solid lightgrey;
+}
+
+/* CSS de Cronicas */
+
+.cronicas__newproduct {
+  background-color: beige;
+  height: 400px;
+  position: relative;
+}
+
+.cronicas__newproduct__title {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+}
+
+.cronicas__newproduct__description {
+  position: absolute;
+  width: 60%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cronicas__newproduct__button {
+  position: absolute;
+  top: 70%;
+  width: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cronicas__container {
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cronicas__card {
+  display: flex;
+  flex-direction: column;
+  border-color: lightgray;
+  border-width: 1px;
+  border-style: solid;
+  text-align: justify;
+  padding: 3rem 1.5rem;
+  width: 30%;
+  min-height: 350px;
+  min-width: 300px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cronicas__card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cronicas__card__image {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.cronicas__card__title {
+  font-weight: bold;
+}
