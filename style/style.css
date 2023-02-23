@@ -361,21 +361,20 @@ footer {
 
 .footer__container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.8rem 0;
+  flex-direction: column;
 }
 
 .footer__contact__container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  margin: 1rem 0rem;
 }
 
 .footer__contact__form__column {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 47.5%;
 }
 
 .footer__contact__form__userdata {
@@ -385,6 +384,7 @@ footer {
 
 .footer__contact__title {
   font-weight: bold;
+  text-align: center;
 }
 
 .footer__contact__form__item {
@@ -415,21 +415,24 @@ footer {
 .footer__socialmedia__container {
   display: flex;
   flex-direction: column;
+  margin: 1rem 0rem;
 }
 
 .footer__socialmedia__title {
   font-weight: bold;
+  text-align: center;
 }
 
 .footer__socialmedia__logocontainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0.5rem;
 }
 
 .footer__socialmedia__logo {
   width: 24px;
   height: 24px;
+  margin: 0 1rem;
 }
 
 .footer__copyright {
@@ -611,4 +614,33 @@ footer {
 
 .cronicas__card__title {
   font-weight: bold;
+}
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+  /* Cambios en el FOOTER */
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__contact__container {
+    width: 70%;
+  }
+
+  .footer__contact__title {
+    text-align: start;
+  }
+
+  .footer__socialmedia__logocontainer {
+    justify-content: space-between;
+  }
+
+  .footer__socialmedia__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
 }
