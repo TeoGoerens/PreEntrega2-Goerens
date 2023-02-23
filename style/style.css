@@ -100,7 +100,7 @@ header {
   align-items: center;
 }
 
-.image__profile {
+.header__profile__image {
   width: 30px;
   height: 30px;
   margin: auto 0;
@@ -108,7 +108,6 @@ header {
 
 .header__profile__name {
   margin-top: 0.5rem;
-  font-weight: bold;
   line-height: 24px;
   text-decoration: none;
   color: #f2f2f2;
@@ -684,6 +683,40 @@ footer {
 }
 
 @media (min-width: 768px) {
+  /* Cambios en el Header y Navbar */
+  .header__logo__text {
+    display: flex;
+  }
+
+  .header__profile__container {
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .header__profile__name {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .header__toggle__container {
+    display: none;
+  }
+  .header__navbar__container {
+    display: block;
+    width: 100%;
+  }
+
+  .header__navbar ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+
+  .header__navbar a {
+    font-weight: bold;
+  }
+
   /* Cambios en el About */
   .about__container {
     flex-direction: row;
