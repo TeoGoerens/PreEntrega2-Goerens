@@ -34,53 +34,47 @@
   <body>
     <header>
       <div class="container">
-        <div class="row">
-          <div class="row">
-            <a href="#">
+        <div class="header__container">
+          <div class="header__logo__container">
+            <a href="index.html">
               <img
-                class="image__logo"
-                src="imgs/puzzle.png"
+                class="header__logo__image"
+                src="../imgs/puzzle.png"
                 alt="Logo Chacho"
               />
             </a>
-            <a href="#"><p class="text__logo">LA WEB DE CHACHO</p></a>
+            <a href="index.html" class="header__logo__text"
+              >EL MUNDO DE CHACHO</a
+            >
           </div>
-          <!-- Aca va la imagen del logo -->
+          <div class="header__profile__container">
+            <a href="#">
+              <img
+                class="header__profile__image"
+                src="../imgs/perfil.png"
+                alt=""
+              />
+            </a>
+            <a href="#" class="header__profile__name"> Teo Goerens</a>
+          </div>
 
-          <div class="column">
-            <div class="block__profile">
-              <a href="#">
-                <img class="image__profile" src="imgs/perfil.png" alt="" />
-              </a>
-              <a href="#" class="name__profile"> Teo Goerens</a>
-            </div>
-            <nav class="nav__bar">
-              <ul class="nav__ul">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                  <a href="pages/prode.html" class="nav__link">Prode</a>
-                </li>
-                <li class="nav__item">
-                  <a href="pages/cronicas.html" class="nav__link">Cronicas</a>
-                </li>
-                <li class="nav__item">
-                  <a href="pages/chachosfc.html" class="nav__link"
-                    >Chachos FC</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a href="pages/about.html" class="nav__link">Acerca</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#footer__contact__form__name" class="nav__link"
-                    >Contacto</a
-                  >
-                </li>
-              </ul>
-            </nav>
+          <div class="header__toggle__container">
+            <a href="javascript:void(0);" onclick="toggleMenu()">
+              <i class="fa fa-bars header__toggle__icon text-center"></i>
+            </a>
           </div>
+        </div>
+        <div id="navLinks" class="header__navbar__container">
+          <nav class="header__navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/prode.html">Prode</a></li>
+              <li><a href="pages/chachosfc.html">Chachos FC</a></li>
+              <li><a href="pages/cronicas.html">Cronicas</a></li>
+              <li><a href="pages/about.html">Acerca</a></li>
+              <li><a href="#footer__contact__form__name">Contacto</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -425,5 +419,15 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("navLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
