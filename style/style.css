@@ -553,38 +553,31 @@ footer {
 
 .cronicas__newproduct {
   background-color: beige;
-  height: 400px;
-  position: relative;
+  min-height: 400px;
 }
 
 .cronicas__newproduct__title {
-  position: absolute;
+  padding-top: 60px;
   width: 100%;
-  top: 20%;
 }
 
 .cronicas__newproduct__description {
-  position: absolute;
-  width: 60%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: min(700px, 75%);
+  margin: 0 auto;
   text-align: center;
 }
 
 .cronicas__newproduct__button {
-  position: absolute;
-  top: 70%;
   width: 100px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: 4rem auto 0;
 }
 
 .cronicas__container {
-  margin: 5rem 0rem;
+  margin: 4rem 0rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -595,10 +588,10 @@ footer {
   border-width: 1px;
   border-style: solid;
   text-align: justify;
+  margin: 1rem;
   padding: 3rem 1.5rem;
-  width: 30%;
   min-height: 350px;
-  min-width: 300px;
+  width: max(300px, 30%);
   background-color: #f2f2f2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
