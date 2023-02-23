@@ -682,3 +682,9 @@ footer {
     width: 45%;
   }
 }
+
+@media (max-width: 993px) {
+  .prode__table__item--hidden {
+    display: none;
+  }
+}
