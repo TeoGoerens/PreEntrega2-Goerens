@@ -97,6 +97,7 @@ header {
 .header__profile__container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -107,8 +108,7 @@ header {
 }
 
 .header__profile__name {
-  margin-top: 0.5rem;
-  line-height: 24px;
+  line-height: 15px;
   text-decoration: none;
   color: #f2f2f2;
 }
