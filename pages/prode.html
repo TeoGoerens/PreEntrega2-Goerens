@@ -88,32 +88,138 @@
           Tiempo para completar antes del cierre de la fecha: 20 minutos
         </p>
 
-        <form action="" method="post">
-          <div class="prode__form__card">
-            <p class="prode__form__card__league">
-              Liga Profesional de Futbol Argentino
-            </p>
-            <p class="prode__form__card__date">12/4/2023 12:00</p>
-            <p class="prode__form__card__team--local">River</p>
-            <p class="prode__form__card__team--visitor">Boca</p>
-            <input
-              class="prode__form__card__matchoutcome"
-              list="match__outcome"
-            />
+        <form action="" method="post" class="prode__form">
+          <div class="prode__form__card__container">
+            <div class="prode__form__card">
+              <p class="prode__form__card__league">
+                Liga Profesional de Futbol Argentino
+              </p>
+              <p class="prode__form__card__date">12/4/2023 12:00</p>
+              <p class="prode__form__card__team--local">River Plate</p>
+              <p class="prode__form__card__team--visitor">Boca Juniors</p>
 
-            <datalist id="match__outcome">
-              <option value="L"></option>
-              <option value="E"></option>
-              <option value="V"></option>
-            </datalist>
-            <input type="number" name="prode__form__card__score--local" />
-            <input type="number" name="prode__form__card__score--visitor" />
-            <p class="prode__form__card__condition">
-              Condicion: Bataca (L = 15pts / E = 10 pts / V = 5pts)
-            </p>
+              <select
+                name=""
+                id=""
+                class="prode__form__card__matchoutcome text-center"
+              >
+                <option value="local">L</option>
+                <option value="tie">E</option>
+                <option value="visitor">V</option>
+              </select>
+
+              <input
+                type="number"
+                min="0"
+                class="prode__form__card__score--local text-center"
+              />
+              <input
+                type="number"
+                min="0"
+                class="prode__form__card__score--visitor text-center"
+              />
+              <p class="prode__form__card__condition">
+                Condicion: Bataca (L = 15pts / E = 10 pts / V = 5pts)
+              </p>
+            </div>
+            <div class="prode__form__card">
+              <p class="prode__form__card__league">Premier League</p>
+              <p class="prode__form__card__date">12/4/2023 12:00</p>
+              <p class="prode__form__card__team--local">Manchester United</p>
+              <p class="prode__form__card__team--visitor">Manchester City</p>
+
+              <select
+                name=""
+                id=""
+                class="prode__form__card__matchoutcome text-center"
+              >
+                <option value="local">L</option>
+                <option value="tie">E</option>
+                <option value="visitor">V</option>
+              </select>
+
+              <input
+                type="number"
+                min="0"
+                class="prode__form__card__score--local text-center"
+              />
+              <input
+                type="number"
+                min="0"
+                class="prode__form__card__score--visitor text-center"
+              />
+              <p class="prode__form__card__condition">
+                Clasico & Bataca & Partido de Premier donde se cagan a patadas
+                (L = 15pts / E = 10 pts / V = 5pts)
+              </p>
+            </div>
+            <div class="prode__form__card">
+              <p class="prode__form__card__league">La Liga</p>
+              <p class="prode__form__card__date">12/4/2023 12:00</p>
+              <p class="prode__form__card__team--local">Real Madrid</p>
+              <p class="prode__form__card__team--visitor">Barcelona</p>
+
+              <select
+                name=""
+                id=""
+                class="prode__form__card__matchoutcome text-center"
+              >
+                <option value="local">L</option>
+                <option value="tie">E</option>
+                <option value="visitor">V</option>
+              </select>
+
+              <input
+                type="number"
+                min="0"
+                class="prode__form__card__score--local text-center"
+              />
+              <input
+                type="number"
+                min="0"
+                class="prode__form__card__score--visitor text-center"
+              />
+              <p class="prode__form__card__condition">
+                Condicion: Bataca (L = 15pts / E = 10 pts / V = 5pts)
+              </p>
+            </div>
+            <div class="prode__form__card">
+              <p class="prode__form__card__league">Serie A</p>
+              <p class="prode__form__card__date">12/4/2023 12:00</p>
+              <p class="prode__form__card__team--local">Juventus</p>
+              <p class="prode__form__card__team--visitor">Inter Milan</p>
+
+              <select
+                name=""
+                id=""
+                class="prode__form__card__matchoutcome text-center"
+              >
+                <option value="local">L</option>
+                <option value="tie">E</option>
+                <option value="visitor">V</option>
+              </select>
+
+              <input
+                type="number"
+                min="0"
+                class="prode__form__card__score--local text-center"
+              />
+              <input
+                type="number"
+                min="0"
+                class="prode__form__card__score--visitor text-center"
+              />
+              <p class="prode__form__card__condition">
+                Condicion: Bataca (L = 15pts / E = 10 pts / V = 5pts)
+              </p>
+            </div>
           </div>
 
-          <input type="submit" value="Completar" />
+          <input
+            type="submit"
+            class="prode__form__button__submit"
+            value="Enviar fecha"
+          />
         </form>
       </div>
     </main>

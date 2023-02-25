@@ -380,7 +380,6 @@ header {
 /* CSS aplicable al footer */
 
 footer {
-  margin-top: 2rem;
   background-color: rgb(215, 203, 186);
 }
 
@@ -547,69 +546,123 @@ footer {
   font-weight: bold;
 }
 
+.prode__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.prode__form__card__container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .prode__form__card {
-  border: solid 1px rebeccapurple;
-  width: clamp(300px, 90vw, 450px);
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  width: clamp(300px, 90vw, 400px);
+  padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr 5rem 5rem;
-  grid-template-rows: repeat(4, auto);
   gap: 0.5rem;
-  padding: 0.5em;
+  grid-template-columns: 1fr 3rem 3rem;
+  /* grid-template-rows: auto auto auto 100px; */
+  grid-template-areas:
+    "league date date"
+    "team_local match_outcome score_local"
+    "team_visitor match_outcome score_visitor"
+    "condition condition condition";
 }
 
 .prode__form__card__league {
-  font-weight: bold;
-  margin-bottom: 0;
+  grid-area: league;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: darkgrey;
+  font-weight: 400;
   display: flex;
   align-items: center;
 }
 
 .prode__form__card__date {
-  grid-column: 2 / 4;
+  grid-area: date;
+  font-size: 0.8rem;
+  font-weight: 500;
   text-align: center;
-  margin-bottom: 0;
   display: flex;
   justify-content: end;
 }
 
 .prode__form__card__team--local {
-  grid-column: 1;
-  grid-row: 2;
+  grid-area: team_local;
   margin-bottom: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 .prode__form__card__team--visitor {
-  grid-column: 1;
-  grid-row: 3;
+  grid-area: team_visitor;
   margin-bottom: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 .prode__form__card__matchoutcome {
-  grid-column: 2;
-  grid-row: 2 / 4;
+  grid-area: match_outcome;
   width: 3rem;
-  text-align: center;
+  font-weight: 500;
+  border: solid 1px darkgrey;
+  border-radius: 5px;
 }
 
 .prode__form__card__score--local {
-  grid-column: 3;
-  grid-row: 2;
+  grid-area: score_local;
+  font-weight: 500;
+  min-height: 25px;
+  border: solid 1px darkgrey;
+  border-radius: 5px;
 }
 
 .prode__form__card__score--visitor {
-  grid-column: 3;
-  grid-row: 3;
+  grid-area: score_visitor;
+  font-weight: 500;
+  min-height: 25px;
+  border: solid 1px darkgrey;
+  border-radius: 5px;
 }
 
 .prode__form__card__condition {
-  grid-column: 1 / 4;
-  grid-row: 4;
-  font-size: 0.6rem;
+  grid-area: condition;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
-  background-color: #f29494;
+  padding: 0.5rem 0.25rem;
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  min-height: 50px;
+}
+
+.prode__form__button__submit {
+  width: clamp(100px, 30vw, 200px);
+  display: block;
+  margin: 2rem auto 0rem;
+  padding: 0.5em;
+  text-align: center;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.prode__form__button__submit:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* CSS de Cronicas */
