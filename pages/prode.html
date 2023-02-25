@@ -88,38 +88,31 @@
           Tiempo para completar antes del cierre de la fecha: 20 minutos
         </p>
 
-        <table class="prode__table">
-          <tr>
-            <th class="prode__table__item--hidden">Dia</th>
-            <th class="prode__table__item--hidden">Liga</th>
-            <th>Local</th>
-            <th>Visitante</th>
-            <th class="prode__table__item--hidden">Ganador</th>
-            <th>Score L</th>
-            <th>Score V</th>
-            <th class="prode__table__item--hidden">Condicion</th>
-          </tr>
-          <tr>
-            <td class="prode__table__item--hidden">1/1/2023</td>
-            <td class="prode__table__item--hidden">La Liga</td>
-            <td>Barcelona</td>
-            <td>Real Madrid</td>
-            <td class="prode__table__item--hidden">L</td>
-            <td>2</td>
-            <td>1</td>
-            <td class="prode__table__item--hidden">Clasico (10 puntos)</td>
-          </tr>
-          <tr>
-            <td class="prode__table__item--hidden">1/1/2023</td>
-            <td class="prode__table__item--hidden">La Liga</td>
-            <td>Barcelona</td>
-            <td>Real Madrid</td>
-            <td class="prode__table__item--hidden">L</td>
-            <td>2</td>
-            <td>1</td>
-            <td class="prode__table__item--hidden">Clasico (10 puntos)</td>
-          </tr>
-        </table>
+        <form action="" method="post">
+          <div class="prode__form__card">
+            <p class="prode__form__card__league">Premier League</p>
+            <p class="prode__form__card__date">12/4/2023 12:00</p>
+            <p class="prode__form__card__team--local">River</p>
+            <p class="prode__form__card__team--visitor">Boca</p>
+            <input
+              class="prode__form__card__matchoutcome"
+              list="match__outcome"
+            />
+
+            <datalist id="match__outcome">
+              <option value="L"></option>
+              <option value="E"></option>
+              <option value="V"></option>
+            </datalist>
+            <input type="number" name="prode__form__card__score--local" />
+            <input type="number" name="prode__form__card__score--visitor" />
+            <p class="prode__form__card__condition">
+              Condicion: Bataca (L = 15pts / E = 10 pts / V = 5pts)
+            </p>
+          </div>
+
+          <input type="submit" value="Completar" />
+        </form>
       </div>
     </main>
     <footer>
