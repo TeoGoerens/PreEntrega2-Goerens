@@ -1,0 +1,119 @@
+@media (min-width: $breakpoint-sm) {
+  /* Cambios en el Index */
+  .presentation__image {
+    height: 250px;
+  }
+
+  /* Cambios en el Footer */
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__contact__container {
+    width: 70%;
+  }
+
+  .footer__contact__title {
+    text-align: start;
+  }
+
+  .footer__socialmedia__logocontainer {
+    justify-content: space-between;
+  }
+
+  .footer__socialmedia__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  /* Cambios en el Header y Navbar */
+  .header__logo__text {
+    display: flex;
+  }
+
+  .header__profile__container {
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .header__profile__name {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .header__toggle__container {
+    display: none;
+  }
+
+  .header__navbar__container {
+    display: block;
+    width: 100%;
+  }
+
+  .header__navbar {
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+      justify-content: space-between;
+    }
+    a {
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      width: clamp(5rem, 15vw, 7rem);
+      min-height: 50px;
+      line-height: 50px;
+    }
+  }
+
+  /* Cambios en el About */
+  .about__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about__description__container {
+    width: 50%;
+    margin-top: 0rem;
+  }
+
+  .about__image__container {
+    width: 45%;
+  }
+
+  .chachos__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .chachos__description__container {
+    width: 50%;
+    margin-top: 0rem;
+  }
+
+  .chachos__image__container {
+    width: 45%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  /* Cambios en el Index */
+  .presentation__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .presentation__information {
+    width: 55%;
+  }
+
+  .presentation__credentials {
+    margin-top: 0;
+    width: 40%;
+  }
+}

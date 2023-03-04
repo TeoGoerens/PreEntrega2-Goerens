@@ -1,0 +1,226 @@
+.presentation__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.presentation__information {
+  width: 100%;
+}
+
+.presentation__image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.presentation__description {
+  padding-top: 2rem;
+  text-align: justify;
+}
+
+.presentation__credentials {
+  margin-top: 2rem;
+  width: max(300px, 30%);
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px;
+  border-color: rgb(215, 203, 186);
+  border-width: 6px;
+  border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.login__form__label {
+  margin-top: 1rem;
+}
+
+.login__form__element {
+  margin-top: 1rem;
+  height: 40px;
+  padding-left: 0.5rem;
+}
+
+.login__button {
+  margin: 3rem auto 0rem;
+  height: 40px;
+  width: 100%;
+}
+
+.register__request__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.register__request__link {
+  padding-left: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.my__content__container {
+  margin-top: 5rem;
+}
+
+.my__content__cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.my__content__card {
+  display: flex;
+  flex-direction: column;
+  border-color: lightgray;
+  border-width: 1px;
+  border-style: solid;
+  text-align: justify;
+  padding: 3rem 1.5rem;
+  margin: 1rem;
+  width: max(300px, 30%);
+  min-height: 350px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.my__content__card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.my__content__card__image {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.my__content__card__title {
+  font-weight: bold;
+}
+
+.messages__container {
+  margin-top: 5rem;
+}
+
+.messages__cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.messages__cards {
+  width: max(300px, 30%);
+  display: flex;
+  flex-direction: column;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-style: solid;
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.messages__cards__title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.messages__cards__images {
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+}
+
+.messages__cards__profileinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.messages__cards__username {
+  font-weight: bold;
+}
+
+.messages__cards__email {
+  font-size: 0.7rem;
+}
+
+.messages__cards__text {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 1rem;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.register__container {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.register__chart {
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem 3rem;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register__chart__title {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.register__chart__description {
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 0.8rem;
+}
+
+#register__form {
+  padding-top: 1rem;
+}
+
+.register__form__element {
+  margin: 1rem 0rem 0.5rem;
+}
+
+.register__form__input {
+  padding-left: 0.5rem;
+}
+
+.register__form__buttoncontainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.register__form__button {
+  width: 30%;
+}

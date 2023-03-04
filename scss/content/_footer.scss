@@ -1,0 +1,87 @@
+footer {
+  background-color: $pentannary-color;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+.footer__contact__form__column {
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+}
+
+.footer__contact__form__userdata {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contact__title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer__contact__form__item {
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.footer__contact__form__message {
+  height: 100%;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.footer__contact__form__buttoncontainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+.footer__contact__form__button {
+  width: 20%;
+  min-width: 50px;
+  font-size: 0.8rem;
+}
+
+.footer__socialmedia__container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem;
+}
+
+.footer__socialmedia__title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer__socialmedia__logocontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.footer__socialmedia__logo {
+  width: 24px;
+  height: 24px;
+  margin: 0 1rem;
+}
+
+.footer__copyright {
+  text-align: center;
+  color: $pentannary-color;
+  background-color: $primary-color;
+  font-size: 0.6rem;
+  padding: 0.2rem 0;
+}

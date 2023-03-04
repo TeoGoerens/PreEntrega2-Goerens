@@ -1,0 +1,57 @@
+.cronicas__newproduct {
+  background-color: beige;
+  min-height: 400px;
+}
+
+.cronicas__newproduct__title {
+  padding-top: 60px;
+  width: 100%;
+}
+
+.cronicas__newproduct__description {
+  width: min(700px, 75%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cronicas__newproduct__button {
+  width: 100px;
+  display: block;
+  margin: 4rem auto 0;
+}
+
+.cronicas__container {
+  margin: 4rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cronicas__card {
+  display: flex;
+  flex-direction: column;
+  border-color: lightgray;
+  border-width: 1px;
+  border-style: solid;
+  text-align: justify;
+  margin: 1rem;
+  padding: 3rem 1.5rem;
+  min-height: 350px;
+  width: max(300px, 30%);
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.cronicas__card__image {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.cronicas__card__title {
+  font-weight: bold;
+}

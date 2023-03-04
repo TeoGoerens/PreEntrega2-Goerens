@@ -1,0 +1,69 @@
+.chachos__container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 5rem;
+}
+
+.chachos__description__container {
+  text-align: justify;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.chachos__image__container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.titles__container {
+  margin-top: 5rem;
+}
+
+.titles__cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.titles__cards {
+  width: max(300px, 30%);
+  display: flex;
+  flex-direction: column;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-style: solid;
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titles__cards__title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.titles__cards__images {
+  width: 48px;
+  height: 48px;
+  margin: auto 0;
+}
+
+.titles__cards__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.titles__cards__text {
+  margin-top: 1rem;
+  padding: 1rem 2rem 2rem;
+  text-align: justify;
+  font-size: 0.8rem;
+}
