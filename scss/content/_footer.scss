@@ -3,26 +3,22 @@ footer {
 }
 
 .footer__container {
-  display: flex;
-  flex-direction: column;
+  @include fullflex(column);
 }
 
 .footer__contact__container {
-  display: flex;
-  flex-direction: column;
+  @include fullflex(column);
   width: 100%;
   margin: 1rem 0rem;
 }
 
 .footer__contact__form__column {
-  display: flex;
-  flex-direction: column;
+  @include fullflex(column);
   width: 47.5%;
 }
 
 .footer__contact__form__userdata {
-  display: flex;
-  justify-content: space-between;
+  @include fullflex(row, space-between);
 }
 
 .footer__contact__title {
@@ -44,8 +40,8 @@ footer {
 }
 
 .footer__contact__form__buttoncontainer {
-  display: flex;
-  justify-content: flex-end;
+  @include fullflex(flex-end);
+
   padding-top: 1rem;
 }
 
@@ -56,8 +52,7 @@ footer {
 }
 
 .footer__socialmedia__container {
-  display: flex;
-  flex-direction: column;
+  @include fullflex(column);
   margin: 1rem 0rem;
 }
 
@@ -67,8 +62,7 @@ footer {
 }
 
 .footer__socialmedia__logocontainer {
-  display: flex;
-  justify-content: center;
+  @include fullflex(row, center);
   margin-top: 0.5rem;
 }
 

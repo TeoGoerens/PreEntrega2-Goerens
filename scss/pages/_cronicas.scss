@@ -21,16 +21,12 @@
 }
 
 .cronicas__container {
+  @include fullflex(row, center);
   margin: 4rem 0rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .cronicas__card {
-  display: flex;
-  flex-direction: column;
+  @include fullflex(column);
   border-color: lightgray;
   border-width: 1px;
   border-style: solid;
@@ -39,7 +35,7 @@
   padding: 3rem 1.5rem;
   min-height: 350px;
   width: max(300px, 30%);
-  background-color: #f2f2f2;
+  background-color: $pentannary-color;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   &:hover {

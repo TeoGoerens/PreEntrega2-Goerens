@@ -4,16 +4,13 @@
 }
 
 .prode__form {
-  display: flex;
-  flex-direction: column;
+  @include fullflex(column);
   margin-bottom: 5rem;
 }
 
 .prode__form__card__container {
-  display: flex;
-  justify-content: center;
+  @include fullflex(row, center, normal, wrap);
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .prode__form__card {
@@ -34,37 +31,33 @@
 
 .prode__form__card__league {
   grid-area: league;
+  @include fullflex(row, flex-start, center);
   font-size: 0.8rem;
   text-transform: uppercase;
   color: darkgrey;
   font-weight: 400;
-  display: flex;
-  align-items: center;
 }
 
 .prode__form__card__date {
   grid-area: date;
+  @include fullflex(row, end, center);
   font-size: 0.8rem;
   font-weight: 500;
   text-align: center;
-  display: flex;
-  justify-content: end;
 }
 
 .prode__form__card__team--local {
   grid-area: team_local;
   margin-bottom: 0;
   font-weight: 500;
-  display: flex;
-  align-items: center;
+  @include fullflex(row, flex-start, center);
 }
 
 .prode__form__card__team--visitor {
   grid-area: team_visitor;
   margin-bottom: 0;
   font-weight: 500;
-  display: flex;
-  align-items: center;
+  @include fullflex(row, flex-start, center);
 }
 
 .prode__form__card__matchoutcome {
@@ -93,14 +86,12 @@
 
 .prode__form__card__condition {
   grid-area: condition;
+  @include fullflex(row, center, center);
   font-size: 0.8rem;
   margin-top: 1.5rem;
   margin-bottom: 0;
   padding: 0.5rem 0.25rem;
   background-color: #f2f2f2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   min-height: 50px;
 }
@@ -111,8 +102,8 @@
   margin: 2rem auto 0rem;
   padding: 0.5em;
   text-align: center;
-  background-color: #0d0d0d;
-  color: #f2f2f2;
+  background-color: $primary-color;
+  color: $pentannary-color;
   font-weight: 500;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

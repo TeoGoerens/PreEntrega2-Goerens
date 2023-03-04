@@ -1,6 +1,5 @@
 .about__container {
-  display: flex;
-  flex-direction: column-reverse;
+  @include fullflex(column-reverse);
   margin-bottom: 5rem;
 }
 

@@ -1,8 +1,6 @@
 .presentation__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include fullflex(column, center, center);
+
   margin-top: 2rem;
 }
 
@@ -22,21 +20,16 @@
 }
 
 .presentation__credentials {
+  @include fullflex(column);
   margin-top: 2rem;
   width: max(300px, 30%);
-  display: flex;
-  flex-direction: column;
-  border-left: solid 1px;
-  border-color: rgb(215, 203, 186);
-  border-width: 6px;
-  border-style: solid;
+  border: rgb(215, 203, 186) 6px solid;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 2rem;
 }
 
 .login__form {
-  display: flex;
-  flex-direction: column;
+  @include fullflex(column);
   margin-top: 2rem;
 }
 
@@ -57,9 +50,7 @@
 }
 
 .register__request__row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  @include fullflex(row, flex-start);
   margin-top: 1rem;
 }
 
@@ -74,18 +65,12 @@
 }
 
 .my__content__cards__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  @include fullflex(row, center, normal, wrap);
 }
 
 .my__content__card {
-  display: flex;
-  flex-direction: column;
-  border-color: lightgray;
-  border-width: 1px;
-  border-style: solid;
+  @include fullflex(column);
+  border: lightgray solid 1px;
   text-align: justify;
   padding: 3rem 1.5rem;
   margin: 1rem;
@@ -113,27 +98,20 @@
 }
 
 .messages__cards__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+  @include fullflex(row, center, center, wrap);
 }
 
 .messages__cards {
+  @include fullflex(column);
   width: max(300px, 30%);
-  display: flex;
-  flex-direction: column;
-  border-color: lightgrey;
-  border-width: 1px;
-  border-style: solid;
+  border: lightgrey 1px solid;
+
   margin: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .messages__cards__title {
-  display: flex;
-  flex-direction: row;
+  @include fullflex(row);
   margin-top: 1rem;
   padding-left: 1rem;
 }
@@ -145,18 +123,18 @@
 }
 
 .messages__cards__profileinfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include fullflex(column, space-between);
   margin-left: 2rem;
 }
 
 .messages__cards__username {
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .messages__cards__email {
   font-size: 0.7rem;
+  margin-bottom: 0;
 }
 
 .messages__cards__text {
@@ -167,26 +145,17 @@
 }
 
 .register__container {
+  @include fullflex(column, center, center);
   margin-top: 3rem;
   margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.register__image {
-  margin: 0 auto;
-  width: 100%;
 }
 
 .register__chart {
+  @include fullflex(column);
   width: 30%;
   min-width: 300px;
-  display: flex;
-  flex-direction: column;
   padding: 0rem 2rem 3rem;
-  background-color: #f2f2f2;
+  background-color: $pentannary-color;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -206,6 +175,10 @@
   padding-top: 1rem;
 }
 
+.register__form__content {
+  @include fullflex(column);
+}
+
 .register__form__element {
   margin: 1rem 0rem 0.5rem;
 }
@@ -215,10 +188,9 @@
 }
 
 .register__form__buttoncontainer {
+  @include fullflex(row, space-around);
   margin-top: 2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .register__form__button {

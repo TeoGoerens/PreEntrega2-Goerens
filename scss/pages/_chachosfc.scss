@@ -1,6 +1,5 @@
 .chachos__container {
-  display: flex;
-  flex-direction: column-reverse;
+  @include fullflex(column-reverse);
   margin-bottom: 5rem;
 }
 
@@ -20,28 +19,20 @@
 }
 
 .titles__cards__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+  @include fullflex(row, center);
   margin-bottom: 3rem;
 }
 
 .titles__cards {
+  @include fullflex(column);
   width: max(300px, 30%);
-  display: flex;
-  flex-direction: column;
-  border-color: lightgrey;
-  border-width: 1px;
-  border-style: solid;
+  border: lightgrey 1px solid;
   margin: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .titles__cards__title {
-  display: flex;
-  flex-direction: row;
+  @include fullflex;
   margin-top: 1rem;
   padding-left: 1rem;
 }
