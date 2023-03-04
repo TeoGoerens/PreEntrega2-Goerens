@@ -800,6 +800,7 @@ footer {
   .header__toggle__container {
     display: none;
   }
+
   .header__navbar__container {
     display: block;
     width: 100%;
@@ -817,7 +818,7 @@ footer {
     font-weight: bold;
     text-align: center;
     display: block;
-    width: clamp(5rem, 15vw, 8rem);
+    width: clamp(5rem, 15vw, 7rem);
     min-height: 50px;
     line-height: 50px;
   }
