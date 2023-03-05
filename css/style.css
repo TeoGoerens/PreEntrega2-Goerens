@@ -158,7 +158,7 @@ footer {
   justify-content: flex-start;
   align-items: normal;
   flex-wrap: wrap;
-  width: 47.5%;
+  width: 49%;
 }
 
 .footer__contact__form__userdata {
@@ -175,12 +175,14 @@ footer {
 }
 
 .footer__contact__form__item {
+  width: 100%;
   padding-left: 0.5rem;
   margin-top: 0.5rem;
   font-size: 0.8rem;
 }
 
 .footer__contact__form__message {
+  width: 100%;
   height: 100%;
   padding-left: 0.5rem;
   margin-top: 0.5rem;
