@@ -5,7 +5,19 @@
 }
 
 .presentation__information {
+  text-transform: capitalize;
   width: 100%;
+  h1 {
+    font-family: $secondary-font;
+  }
+  h3 {
+    font-weight: 300;
+  }
+  h3 span {
+    font-size: inherit;
+    font-family: $secondary-font;
+    font-weight: bold;
+  }
 }
 
 .presentation__image {
@@ -15,7 +27,6 @@
 }
 
 .presentation__description {
-  padding-top: 2rem;
   text-align: justify;
 }
 
@@ -76,12 +87,20 @@
   margin: 1rem;
   width: max(300px, 30%);
   min-height: 350px;
-  background-color: #f2f2f2;
+  background-color: $pentannary-color;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.my__content__card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    background-color: rgba($primary-color, 0.8);
+  }
+  &:hover h3,
+  &:hover p {
+    color: $pentannary-color;
+  }
 }
 
 .my__content__card__image {

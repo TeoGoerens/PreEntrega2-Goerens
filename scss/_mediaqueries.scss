@@ -53,20 +53,18 @@
   }
 
   .header__navbar {
+    margin-top: 1rem;
     ul {
-      display: flex;
+      gap: 1rem;
       flex-direction: row;
       padding-left: 0;
-      margin-bottom: 0;
       justify-content: space-between;
     }
     a {
-      font-weight: bold;
       text-align: center;
       display: block;
       width: clamp(5rem, 15vw, 7rem);
-      min-height: 50px;
-      line-height: 50px;
+      line-height: 30px;
     }
   }
 
