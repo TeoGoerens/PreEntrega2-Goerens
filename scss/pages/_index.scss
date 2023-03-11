@@ -42,10 +42,19 @@
 .login__form {
   @include fullflex(column);
   margin-top: 2rem;
+  > a {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .login__form__label {
   margin-top: 1rem;
+  font-weight: 500;
 }
 
 .login__form__element {
@@ -55,6 +64,7 @@
 }
 
 .login__button {
+  @include submitbutton;
   margin: 3rem auto 0rem;
   height: 40px;
   width: 100%;
@@ -65,10 +75,17 @@
   margin-top: 1rem;
 }
 
+.register__request__text {
+  font-size: 0.7rem;
+}
+
 .register__request__link {
+  font-size: 0.7rem;
   padding-left: 0.5rem;
   text-decoration: none;
-  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .my__content__container {
@@ -81,25 +98,16 @@
 
 .my__content__card {
   @include fullflex(column);
+  @include plaincard;
   border: lightgray solid 1px;
   text-align: justify;
   padding: 3rem 1.5rem;
   margin: 1rem;
   width: max(300px, 30%);
   min-height: 350px;
-  background-color: $pentannary-color;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1);
-  transition: transform 0.5s ease;
+
   &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.05);
-    transition: transform 0.5s ease;
-    background-color: rgba($primary-color, 0.8);
-  }
-  &:hover h3,
-  &:hover p {
-    color: $pentannary-color;
+    @include hoveredcard;
   }
 }
 
@@ -200,6 +208,7 @@
 
 .register__form__element {
   margin: 1rem 0rem 0.5rem;
+  font-weight: 500;
 }
 
 .register__form__input {
@@ -207,11 +216,13 @@
 }
 
 .register__form__buttoncontainer {
-  @include fullflex(row, space-around);
+  @include fullflex(row, space-between);
   margin-top: 2rem;
   display: flex;
 }
 
 .register__form__button {
-  width: 30%;
+  @include submitbutton;
+  line-height: 30px;
+  width: 100px;
 }

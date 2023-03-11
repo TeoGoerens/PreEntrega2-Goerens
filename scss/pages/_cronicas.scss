@@ -15,7 +15,9 @@
 }
 
 .cronicas__newproduct__button {
-  width: 100px;
+  @include submitbutton;
+  width: 200px;
+  line-height: 40px;
   display: block;
   margin: 4rem auto 0;
 }
@@ -27,6 +29,7 @@
 
 .cronicas__card {
   @include fullflex(column);
+  @include plaincard;
   border-color: lightgray;
   border-width: 1px;
   border-style: solid;
@@ -37,9 +40,8 @@
   width: max(300px, 30%);
   background-color: $pentannary-color;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
   &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include hoveredcard;
   }
 }
 

@@ -25,10 +25,14 @@
 
 .titles__cards {
   @include fullflex(column);
+  @include plaincard;
   width: max(300px, 30%);
   border: lightgrey 1px solid;
   margin: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  &:hover {
+    @include hoveredcard;
+  }
 }
 
 .titles__cards__title {

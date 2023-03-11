@@ -1,0 +1,15 @@
+@mixin submitbutton {
+  all: unset;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+  border: $primary-color solid 2px;
+  color: $primary-color;
+  border-radius: 30px;
+  transition: 0.4s ease;
+  &:hover {
+    color: $pentannary-color;
+    background-color: $primary-color;
+    transition: 0.4s ease;
+  }
+}

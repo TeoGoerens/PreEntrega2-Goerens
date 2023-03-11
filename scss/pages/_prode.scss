@@ -97,18 +97,9 @@
 }
 
 .prode__form__button__submit {
+  @include submitbutton;
   width: clamp(100px, 30vw, 200px);
   display: block;
   margin: 2rem auto 0rem;
   padding: 0.5em;
-  text-align: center;
-  background-color: $primary-color;
-  color: $pentannary-color;
-  font-weight: 500;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.prode__form__button__submit:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

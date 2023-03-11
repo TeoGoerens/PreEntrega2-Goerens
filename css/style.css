@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: #0d0d0d;
+  color: inherit;
   font-weight: 300;
   font-size: 0.9rem;
 }
@@ -215,9 +215,22 @@ footer {
 }
 
 .footer__contact__form__button {
+  all: unset;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+  border: #0d0d0d solid 2px;
+  color: #0d0d0d;
+  border-radius: 30px;
+  transition: 0.4s ease;
   width: 20%;
   min-width: 50px;
   font-size: 0.8rem;
+}
+.footer__contact__form__button:hover {
+  color: #f2f2f2;
+  background-color: #0d0d0d;
+  transition: 0.4s ease;
 }
 
 .footer__socialmedia__container {
@@ -322,10 +335,21 @@ footer {
   justify-content: flex-start;
   align-items: normal;
   flex-wrap: wrap;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: transform 0.5s ease;
   width: max(300px, 30%);
   border: lightgrey 1px solid;
   margin: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.titles__cards:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  background-color: rgba(13, 13, 13, 0.8);
+  color: #f2f2f2;
 }
 
 .titles__cards__title {
@@ -416,9 +440,18 @@ footer {
   flex-wrap: wrap;
   margin-top: 2rem;
 }
+.login__form > a {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+.login__form > a:hover {
+  text-decoration: underline;
+}
 
 .login__form__label {
   margin-top: 1rem;
+  font-weight: 500;
 }
 
 .login__form__element {
@@ -428,9 +461,22 @@ footer {
 }
 
 .login__button {
+  all: unset;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+  border: #0d0d0d solid 2px;
+  color: #0d0d0d;
+  border-radius: 30px;
+  transition: 0.4s ease;
   margin: 3rem auto 0rem;
   height: 40px;
   width: 100%;
+}
+.login__button:hover {
+  color: #f2f2f2;
+  background-color: #0d0d0d;
+  transition: 0.4s ease;
 }
 
 .register__request__row {
@@ -442,10 +488,17 @@ footer {
   margin-top: 1rem;
 }
 
+.register__request__text {
+  font-size: 0.7rem;
+}
+
 .register__request__link {
+  font-size: 0.7rem;
   padding-left: 0.5rem;
   text-decoration: none;
-  font-weight: bold;
+}
+.register__request__link:hover {
+  text-decoration: underline;
 }
 
 .my__content__container {
@@ -466,24 +519,22 @@ footer {
   justify-content: flex-start;
   align-items: normal;
   flex-wrap: wrap;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: transform 0.5s ease;
   border: lightgray solid 1px;
   text-align: justify;
   padding: 3rem 1.5rem;
   margin: 1rem;
   width: max(300px, 30%);
   min-height: 350px;
-  background-color: #f2f2f2;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1);
-  transition: transform 0.5s ease;
 }
 .my__content__card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: transform 0.5s ease;
   background-color: rgba(13, 13, 13, 0.8);
-}
-.my__content__card:hover h3, .my__content__card:hover p {
   color: #f2f2f2;
 }
 
@@ -611,6 +662,7 @@ footer {
 
 .register__form__element {
   margin: 1rem 0rem 0.5rem;
+  font-weight: 500;
 }
 
 .register__form__input {
@@ -620,7 +672,7 @@ footer {
 .register__form__buttoncontainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: normal;
   flex-wrap: wrap;
   margin-top: 2rem;
@@ -628,7 +680,21 @@ footer {
 }
 
 .register__form__button {
-  width: 30%;
+  all: unset;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+  border: #0d0d0d solid 2px;
+  color: #0d0d0d;
+  border-radius: 30px;
+  transition: 0.4s ease;
+  line-height: 30px;
+  width: 100px;
+}
+.register__form__button:hover {
+  color: #f2f2f2;
+  background-color: #0d0d0d;
+  transition: 0.4s ease;
 }
 
 .prode__title {
@@ -754,20 +820,23 @@ footer {
 }
 
 .prode__form__button__submit {
+  all: unset;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+  border: #0d0d0d solid 2px;
+  color: #0d0d0d;
+  border-radius: 30px;
+  transition: 0.4s ease;
   width: clamp(100px, 30vw, 200px);
   display: block;
   margin: 2rem auto 0rem;
   padding: 0.5em;
-  text-align: center;
-  background-color: #0d0d0d;
-  color: #f2f2f2;
-  font-weight: 500;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
 .prode__form__button__submit:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #f2f2f2;
+  background-color: #0d0d0d;
+  transition: 0.4s ease;
 }
 
 .cronicas__newproduct {
@@ -787,9 +856,23 @@ footer {
 }
 
 .cronicas__newproduct__button {
-  width: 100px;
+  all: unset;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+  border: #0d0d0d solid 2px;
+  color: #0d0d0d;
+  border-radius: 30px;
+  transition: 0.4s ease;
+  width: 200px;
+  line-height: 40px;
   display: block;
   margin: 4rem auto 0;
+}
+.cronicas__newproduct__button:hover {
+  color: #f2f2f2;
+  background-color: #0d0d0d;
+  transition: 0.4s ease;
 }
 
 .cronicas__container {
@@ -807,6 +890,10 @@ footer {
   justify-content: flex-start;
   align-items: normal;
   flex-wrap: wrap;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: transform 0.5s ease;
   border-color: lightgray;
   border-width: 1px;
   border-style: solid;
@@ -820,6 +907,10 @@ footer {
 }
 .cronicas__card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  background-color: rgba(13, 13, 13, 0.8);
+  color: #f2f2f2;
 }
 
 .cronicas__card__image {

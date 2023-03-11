@@ -43,11 +43,11 @@ footer {
 
 .footer__contact__form__buttoncontainer {
   @include fullflex(flex-end);
-
   padding-top: 1rem;
 }
 
 .footer__contact__form__button {
+  @include submitbutton;
   width: 20%;
   min-width: 50px;
   font-size: 0.8rem;
