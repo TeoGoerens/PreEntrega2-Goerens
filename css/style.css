@@ -227,7 +227,7 @@ footer {
   min-width: 50px;
   font-size: 0.8rem;
 }
-.footer__contact__form__button:hover {
+.footer__contact__form__button:hover, .footer__contact__form__button:focus-within {
   color: #f2f2f2;
   background-color: #0d0d0d;
   transition: 0.4s ease;
@@ -473,7 +473,7 @@ footer {
   height: 40px;
   width: 100%;
 }
-.login__button:hover {
+.login__button:hover, .login__button:focus-within {
   color: #f2f2f2;
   background-color: #0d0d0d;
   transition: 0.4s ease;
@@ -691,7 +691,7 @@ footer {
   line-height: 30px;
   width: 100px;
 }
-.register__form__button:hover {
+.register__form__button:hover, .register__form__button:focus-within {
   color: #f2f2f2;
   background-color: #0d0d0d;
   transition: 0.4s ease;
@@ -741,8 +741,7 @@ footer {
   flex-wrap: wrap;
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: darkgrey;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .prode__form__card__date {
@@ -833,7 +832,7 @@ footer {
   margin: 2rem auto 0rem;
   padding: 0.5em;
 }
-.prode__form__button__submit:hover {
+.prode__form__button__submit:hover, .prode__form__button__submit:focus-within {
   color: #f2f2f2;
   background-color: #0d0d0d;
   transition: 0.4s ease;
@@ -869,7 +868,7 @@ footer {
   display: block;
   margin: 4rem auto 0;
 }
-.cronicas__newproduct__button:hover {
+.cronicas__newproduct__button:hover, .cronicas__newproduct__button:focus-within {
   color: #f2f2f2;
   background-color: #0d0d0d;
   transition: 0.4s ease;

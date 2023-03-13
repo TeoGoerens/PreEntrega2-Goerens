@@ -114,14 +114,20 @@
           <div class="presentation__credentials">
             <p>Si ya sos un usuario registrado, inicia sesion</p>
             <form class="login__form" action="">
-              <label class="login__form__label" for="">Nombre de usuario</label>
+              <label class="login__form__label" for="emailLogin"
+                >Nombre de usuario</label
+              >
               <input
+                id="emailLogin"
                 class="login__form__element"
                 type="text"
                 placeholder="example@outlook.com"
               />
-              <label class="login__form__label" for="">Contraseña</label>
+              <label class="login__form__label" for="passwordLogin"
+                >Contraseña</label
+              >
               <input
+                id="passwordLogin"
                 class="login__form__element"
                 type="text"
                 placeholder="********"
@@ -312,22 +318,39 @@
             </p>
             <form id="register__form" action="">
               <div class="register__form__content">
-                <label class="register__form__element" for="">Nombre</label>
+                <label
+                  class="register__form__element"
+                  for="register__form__name"
+                  >Nombre</label
+                >
                 <input
                   id="register__form__name"
                   class="register__form__input"
                   type="text"
                 />
-                <label class="register__form__element" for="">Apellido</label>
-                <input class="register__form__input" type="text" />
-                <label class="register__form__element" for=""
-                  >Correo electronico / Nombre de usuario</label
+                <label class="register__form__element" for="registerSurname"
+                  >Apellido</label
                 >
-                <input class="register__form__input" type="text" />
-                <label class="register__form__element" for="">Contraseña</label>
                 <input
                   class="register__form__input"
                   type="text"
+                  id="registerSurname"
+                />
+                <label class="register__form__element" for="registerMail"
+                  >Correo electronico / Nombre de usuario</label
+                >
+                <input
+                  class="register__form__input"
+                  type="text"
+                  id="registerMail"
+                />
+                <label class="register__form__element" for="registerPassword"
+                  >Contraseña</label
+                >
+                <input
+                  class="register__form__input"
+                  type="text"
+                  id="registerPassword"
                   placeholder="********"
                 />
               </div>
@@ -356,28 +379,34 @@
             <form action="" class="footer__contact__form">
               <div class="footer__contact__form__userdata">
                 <div class="footer__contact__form__column">
+                  <label for="footer__contact__form__name"></label>
                   <input
                     id="footer__contact__form__name"
                     class="footer__contact__form__item"
                     type="text"
                     placeholder="Nombre"
                   />
+                  <label for="contactMail"></label>
                   <input
+                    id="contactMail"
                     class="footer__contact__form__item"
                     type="text"
                     placeholder="Correo electronico"
                   />
+                  <label for="contactNumber"></label>
                   <input
+                    id="contactNumber"
                     class="footer__contact__form__item"
                     type="text"
                     placeholder="Numero de telefono"
                   />
                 </div>
                 <div class="footer__contact__form__column">
+                  <label for="contactMessage"></label>
                   <textarea
                     class="footer__contact__form__message"
                     name=""
-                    id=""
+                    id="contactMessage"
                     placeholder="Comparti tu mensaje"
                   ></textarea>
                 </div>
