@@ -921,6 +921,81 @@ footer {
   font-weight: bold;
 }
 
+.admin__container {
+  background: #f6f6f9;
+}
+
+aside {
+  /* General Concepts for Aside */
+  width: 50%;
+  background: #fff;
+  /* Top Aside */
+  /* Sidebar Menu */
+}
+aside .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+aside .top h1 {
+  margin: 0 0 0 0.8rem;
+  text-align: start;
+  text-transform: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+aside .top h1 span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7380ec;
+}
+aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: wrap;
+  padding-left: 0.8rem;
+}
+aside h2 {
+  margin: 2rem 0 0.5rem 0rem;
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+aside a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: #7d8da1;
+  padding-left: 3rem;
+  gap: 1rem;
+  height: 2.5rem;
+  transition: all 0.3s ease;
+}
+aside a h3 {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 300;
+}
+aside a.admin__aside__item--active {
+  background: rgba(132, 139, 200, 0.18);
+  color: #7380ec;
+  padding-left: 0rem;
+}
+aside a.admin__aside__item--active::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: #7380ec;
+}
+
 @media (min-width: 576px) {
   /* Cambios en el Index */
   .presentation__image {

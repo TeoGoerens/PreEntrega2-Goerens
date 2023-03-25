@@ -1,0 +1,62 @@
+.admin__container {
+  background: $color-background;
+}
+
+aside {
+  /* General Concepts for Aside */
+  width: 50%;
+  background: $color-white;
+  /* Top Aside */
+  .top {
+    @include fullflex(row, space-between, center);
+    h1 {
+      margin: 0 0 0 0.8rem;
+      text-align: start;
+      text-transform: none;
+      font-size: 1.2rem;
+      font-weight: 700;
+      span {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $color-primary;
+      }
+    }
+  }
+  /* Sidebar Menu */
+  .sidebar {
+    @include fullflex(column);
+    padding-left: 0.8rem;
+  }
+  h2 {
+    margin: 2rem 0 0.5rem 0rem;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+    font-weight: 500;
+  }
+  a {
+    @include fullflex(row, flex-start, center);
+    text-decoration: none;
+    color: $color-info-dark;
+    padding-left: 3rem;
+    gap: 1rem;
+    height: 2.5rem;
+    transition: all 0.3s ease;
+    h3 {
+      margin: 0;
+      font-size: 0.88rem;
+      font-weight: 300;
+    }
+    &.admin__aside__item--active {
+      background: $color-light;
+      color: $color-primary;
+      padding-left: 0rem;
+      &::before {
+        content: "";
+        width: 6px;
+        height: 100%;
+        background: $color-primary;
+      }
+    }
+  }
+}
