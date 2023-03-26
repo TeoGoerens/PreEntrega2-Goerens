@@ -1129,7 +1129,7 @@ aside a.admin__aside__item--active span {
   /* Cambios en el Admin Panel */
   .admin__container aside {
     display: inline-block;
-    opacity: 1;
+    left: 0;
   }
   .admin__container aside .top .close {
     display: none;
