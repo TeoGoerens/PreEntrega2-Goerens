@@ -1,14 +1,20 @@
 .admin__container {
+  position: relative;
   background: $color-background;
   display: grid;
-  grid-template-columns: 18rem 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
 }
 
 aside {
   /* General Concepts for Aside */
   background: $color-white;
-  z-index: 90;
   display: none;
+  z-index: 90;
+  position: absolute;
+  width: 18rem;
+  left: -100%;
+  animation: showMenu 0.5s ease forwards;
 
   /* Top Aside */
   .top {
@@ -88,5 +94,14 @@ aside {
   button {
     border: none;
     background: transparent;
+  }
+  h2 {
+    font-weight: 300;
+    text-transform: none;
+    span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-primary;
+    }
   }
 }

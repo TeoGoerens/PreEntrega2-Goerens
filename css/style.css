@@ -32,6 +32,11 @@ h3 {
   margin: 2rem auto;
 }
 
+@keyframes showMenu {
+  to {
+    left: 0;
+  }
+}
 header {
   background-color: #0d0d0d;
   color: #f2f2f2;
@@ -923,16 +928,22 @@ footer {
 }
 
 .admin__container {
+  position: relative;
   background: #f6f6f9;
   display: grid;
-  grid-template-columns: 18rem 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
 }
 
 aside {
   /* General Concepts for Aside */
   background: #fff;
-  z-index: 90;
   display: none;
+  z-index: 90;
+  position: absolute;
+  width: 18rem;
+  left: -100%;
+  animation: showMenu 0.5s ease forwards;
   /* Top Aside */
   /* Sidebar Menu */
 }
@@ -1022,6 +1033,15 @@ aside a.admin__aside__item--active span {
 .admin__main button {
   border: none;
   background: transparent;
+}
+.admin__main h2 {
+  font-weight: 300;
+  text-transform: none;
+}
+.admin__main h2 span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7380ec;
 }
 
 @media (min-width: 576px) {
