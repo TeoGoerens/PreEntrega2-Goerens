@@ -942,6 +942,7 @@ aside {
   z-index: 90;
   position: absolute;
   width: 18rem;
+  height: 100%;
   left: -100%;
   animation: showMenu 0.5s ease forwards;
   /* Top Aside */
