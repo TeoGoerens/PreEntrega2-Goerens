@@ -123,7 +123,7 @@
               <h3>Eliminar Usuario</h3></a
             >
             <h2>Prode</h2>
-            <a href="#" class="admin__aside__item--active"
+            <a href="#"
               ><span class="material-symbols-outlined"> add </span>
               <h3>Crear Torneo</h3></a
             >
@@ -135,7 +135,7 @@
               ><span class="material-symbols-outlined"> delete </span>
               <h3>Eliminar Torneo</h3></a
             >
-            <a href="#"
+            <a href="#" class="admin__aside__item--active"
               ><span class="material-symbols-outlined"> add_circle </span>
               <h3>Crear Fecha</h3></a
             >
@@ -162,6 +162,11 @@
             >
           </div>
         </aside>
+        <div class="admin__main">
+          <button id="aside-btn">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+        </div>
       </div>
     </main>
     <footer>
@@ -258,6 +263,18 @@
           x.style.display = "block";
         }
       }
+
+      const sideMenu = document.querySelector("aside");
+      const menuBtn = document.querySelector("#aside-btn");
+      const closeBtn = document.querySelector("#close-btn");
+
+      menuBtn.addEventListener("click", () => {
+        sideMenu.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        sideMenu.style.display = "none";
+      });
     </script>
   </body>
 </html>

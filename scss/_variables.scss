@@ -16,12 +16,14 @@ $color-background: #f6f6f9;
 $color-dark: #363949;
 $color-light: rgba(132, 139, 200, 0.18);
 
-/* FOnts */
+/* Fonts */
 $primary-font: "Poppins";
 $secondary-font: "Tilt Warp";
 
-/* Breakpoints for Media Queries */
+/* Padding & Margins */
+$gap-admin-aside: 0.5rem;
 
+/* Breakpoints for Media Queries */
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;

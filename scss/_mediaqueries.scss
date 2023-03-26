@@ -96,6 +96,24 @@
   .chachos__image__container {
     width: 45%;
   }
+
+  /* Cambios en el Admin Panel */
+  .admin__container {
+    aside {
+      display: inline-block;
+      opacity: 1;
+      .top {
+        .close {
+          display: none;
+        }
+      }
+    }
+    .admin__main {
+      button {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (min-width: $breakpoint-lg) {

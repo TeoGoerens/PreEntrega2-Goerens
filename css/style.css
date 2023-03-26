@@ -1,5 +1,6 @@
 /* Color palette */
-/* FOnts */
+/* Fonts */
+/* Padding & Margins */
 /* Breakpoints for Media Queries */
 * {
   margin: 0;
@@ -923,12 +924,15 @@ footer {
 
 .admin__container {
   background: #f6f6f9;
+  display: grid;
+  grid-template-columns: 18rem 1fr;
 }
 
 aside {
   /* General Concepts for Aside */
-  width: 50%;
   background: #fff;
+  z-index: 90;
+  display: none;
   /* Top Aside */
   /* Sidebar Menu */
 }
@@ -940,7 +944,7 @@ aside .top {
   flex-wrap: wrap;
 }
 aside .top h1 {
-  margin: 0 0 0 0.8rem;
+  margin: 0.5rem 0 0 0.8rem;
   text-align: start;
   text-transform: none;
   font-size: 1.2rem;
@@ -950,6 +954,9 @@ aside .top h1 span {
   font-size: 1.2rem;
   font-weight: 700;
   color: #7380ec;
+}
+aside .top .close {
+  cursor: pointer;
 }
 aside .sidebar {
   display: flex;
@@ -974,9 +981,22 @@ aside a {
   flex-wrap: wrap;
   text-decoration: none;
   color: #7d8da1;
-  padding-left: 3rem;
-  gap: 1rem;
+  padding-left: 1rem;
+  gap: 0.5rem;
   height: 2.5rem;
+  transition: all 0.3s ease;
+  /* Item activo del Sidebar */
+}
+aside a:last-child {
+  margin-bottom: 3rem;
+}
+aside a:hover {
+  color: #7380ec;
+}
+aside a:hover span {
+  margin-left: 1rem;
+}
+aside a span {
   transition: all 0.3s ease;
 }
 aside a h3 {
@@ -994,6 +1014,14 @@ aside a.admin__aside__item--active::before {
   width: 6px;
   height: 100%;
   background: #7380ec;
+}
+aside a.admin__aside__item--active span {
+  margin-left: calc(1rem - 6px - 0.5rem);
+}
+
+.admin__main button {
+  border: none;
+  background: transparent;
 }
 
 @media (min-width: 576px) {
@@ -1076,6 +1104,17 @@ aside a.admin__aside__item--active::before {
   }
   .chachos__image__container {
     width: 45%;
+  }
+  /* Cambios en el Admin Panel */
+  .admin__container aside {
+    display: inline-block;
+    opacity: 1;
+  }
+  .admin__container aside .top .close {
+    display: none;
+  }
+  .admin__container .admin__main button {
+    display: none;
   }
 }
 @media (min-width: 992px) {

@@ -1,16 +1,20 @@
 .admin__container {
   background: $color-background;
+  display: grid;
+  grid-template-columns: 18rem 1fr;
 }
 
 aside {
   /* General Concepts for Aside */
-  width: 50%;
   background: $color-white;
+  z-index: 90;
+  display: none;
+
   /* Top Aside */
   .top {
     @include fullflex(row, space-between, center);
     h1 {
-      margin: 0 0 0 0.8rem;
+      margin: 0.5rem 0 0 0.8rem;
       text-align: start;
       text-transform: none;
       font-size: 1.2rem;
@@ -20,6 +24,9 @@ aside {
         font-weight: 700;
         color: $color-primary;
       }
+    }
+    .close {
+      cursor: pointer;
     }
   }
   /* Sidebar Menu */
@@ -38,15 +45,28 @@ aside {
     @include fullflex(row, flex-start, center);
     text-decoration: none;
     color: $color-info-dark;
-    padding-left: 3rem;
-    gap: 1rem;
+    padding-left: 1rem;
+    gap: $gap-admin-aside;
     height: 2.5rem;
     transition: all 0.3s ease;
+    &:last-child {
+      margin-bottom: 3rem;
+    }
+    &:hover {
+      color: $color-primary;
+      span {
+        margin-left: 1rem;
+      }
+    }
+    span {
+      transition: all 0.3s ease;
+    }
     h3 {
       margin: 0;
       font-size: 0.88rem;
       font-weight: 300;
     }
+    /* Item activo del Sidebar */
     &.admin__aside__item--active {
       background: $color-light;
       color: $color-primary;
@@ -57,6 +77,16 @@ aside {
         height: 100%;
         background: $color-primary;
       }
+      span {
+        margin-left: calc(1rem - 6px - $gap-admin-aside);
+      }
     }
+  }
+}
+
+.admin__main {
+  button {
+    border: none;
+    background: transparent;
   }
 }
